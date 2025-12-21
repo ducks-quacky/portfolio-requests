@@ -1,6 +1,6 @@
 {
-  "status": "Commissions open",
+  "status": "test",
   "statusdot": "1",
-  "amount": 0,
+  "amount": 3,
   "max_amount": 3
-} 
+}
