@@ -1,6 +1,6 @@
 {
-  "status": "Comms open",
-  "statusdot": "1",
-  "amount": 1,
-  "max_amount": 3
+  "status": "Commissions full.",
+  "statusdot": "2",
+  "amount": 3,
+  "max_amount": 5
 }
