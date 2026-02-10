@@ -1,6 +1,6 @@
 {
-  "status": "Commissions Closed",
-  "statusdot": "3",
-  "amount": 2,
+  "status": "Commissions Selective",
+  "statusdot": "2",
+  "amount": 1,
   "max_amount": 3
 }
