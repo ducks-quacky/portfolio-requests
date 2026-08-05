@@ -406,6 +406,28 @@
                 "- **Permission denied** | Make sure the API key owner has permission to upload assets for the selected user or group.",
                 "- **Images are not visible immediately** | Roblox may still be processing or moderating the uploaded images."
               ]
+            },
+            {
+              "type": "heading",
+              "level": 3,
+              "text": "Method 2 | ZIP Folder",
+              "id": ""
+            },
+            {
+              "type": "paragraph",
+              "text": "You may import the images yourself using the **asset manager** in roblox studio then inserting it."
+            },
+            {
+              "type": "sub-title",
+              "text": "Old asset manager"
+            },
+            {
+              "type": "image",
+              "image": "",
+              "alt": "",
+              "caption": "",
+              "loading": "lazy",
+              "text": ""
             }
           ]
         }
