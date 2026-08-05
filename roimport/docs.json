@@ -1,38 +1,410 @@
 {
-  "title": "RoImport",
-  "tagline": "Figma to Roblox, simplified.",
-  "description": "RoImport is a free tool that allows you to export frames directly from figma to roblox, which carries almost if not all properties, objects, and layouts. It is designed to be simple and easy to use, while also being powerful enough to handle complex designs.",
-  "heroImage": "https://otherassets.commissiontoolz.xyz/roimport/zxvvbvn.png",
-  "features": [
+  "sections": [
     {
-      "icon": "tag",
-      "title": "Tag System",
-      "description": "You will be able to input your own tags like _parent, _gray, ect. not case sensitive and can be combined."
+      "title": "Getting Started",
+      "subsections": [
+        {
+          "title": "Installation",
+          "id": "installation",
+          "content": [
+            {
+              "type": "paragraph",
+              "texts": [
+                "- Open Roblox studio, open **toolbox**, search up **RoImport**, then install it. make sure its by **Stux** and noone else",
+                "- Open figma and go to the **tools** button at the bottom of the screen, then search up **roimport**, make sure its by **stuxfian**, then use"
+              ]
+            },
+            {
+              "type": "notice",
+              "text": "Make sure you have the **Figma desktop app** installed for the best experience. The plugin also works in the browser, but some features may be limited."
+            },
+            {
+              "type": "paragraph",
+              "text": "Once installed, you can now use the plugin as much as you want."
+            }
+          ]
+        },
+        {
+          "title": "Figma Plugin",
+          "id": "figma-plugin",
+          "content": [
+            {
+              "type": "image",
+              "image": "https://otherassets.commissiontoolz.xyz/roimport/b34e0fa9-bc9c-4fc1-82a0-d0a6b482bc5d_image.webp",
+              "alt": "Figma Plugin UI"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "- You will be introduced with a header that has 2 buttons, __Tutorial__ and __Tag Inputter__ and stats of the frame you exported.",
+                "- The export button will export the frame you have selected, any images will automatically be downloaded into a ZIP Folder. containg all images.",
+                "- The copy clipboard button will copy the JSON to your clipboard."
+              ]
+            },
+            {
+              "type": "sub-title",
+              "text": "Export Settings"
+            },
+            {
+              "type": "image",
+              "image": "https://otherassets.commissiontoolz.xyz/roimport/8b4cf184-6ea5-4b15-ad17-1b2b6f77312a_image_7.webp",
+              "alt": "Figma Plugin UI"
+            },
+            {
+              "type": "paragraph",
+              "linkNewTab": false,
+              "texts": [
+                "**The export settings allow you to customize your objects are exported.**",
+                "- **Export Images** allows you to determain the size multiplier and what image format of the images if any being exported",
+                "- **Export ui.json in folder** Will have UI.Json in the folder of the image folder ZIP",
+                "- **Normalize Text Names** Will change all texts to **TextLabel**",
+                "- **Automatic Grayscale** when toggled, it will automatically grayscale any unsupported object that can be grayscaled properly, {link:/docs/automatic-grayscale.html}:click here to learn more information"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Automatic grayscale",
+          "id": "automatic-grayscale",
+          "content": [
+            {
+              "type": "paragraph",
+              "texts": [
+                "- **what is Automatic grayscale?** automatic grayscale is a option that is availalbe in the **export settings**, it will detect objects that can be grayscaled."
+              ]
+            },
+            {
+              "type": "image",
+              "image": "https://otherassets.commissiontoolz.xyz/roimport/b13920e6-c839-48dc-aef7-f5cf3d664634_sxfbgvczxvb.webp"
+            },
+            {
+              "type": "sub-title",
+              "text": "What will be automatically grayscaled?"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "**- Objects that has 1 fill only**",
+                "**- Objects that has 1 stroke only**",
+                "**- Objects that has 1 fill that is 1% or less opacity, 1 stroke that is 1% or less opacity and a innershadow, the innershadow will be grayscaled**"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-      "icon": "gift",
-      "title": "Free Forever",
-      "description": "This product is permanently free and wont require any sort of payment."
-    },
-    {
-      "icon": "download",
-      "title": "Direct Import",
-      "description": "Export frames directly from Figma to Roblox-compatible GUI layouts. No manual recreation, no lost properties."
-    },
-    {
-      "icon": "layout",
-      "title": "Auto-Layout Detection",
-      "description": "Automatically detects Figma auto-layout frames and translates them into Roblox UIListLayouts, UIGridLayouts and UIPadding"
-    },
-    {
-      "icon": "box",
-      "title": "Component Mapping",
-      "description": "Maps Figma components to Roblox GUI elements, text to TextLabel, rectangles to Frame, images to ImageLabel."
-    },
-    {
-      "icon": "layers",
-      "title": "Batch Processing",
-      "description": "Import multiple frames at once. Select, tag, and export entire design systems in a single pass."
+      "title": "Using the plugin",
+      "subsections": [
+        {
+          "title": "Tags",
+          "id": "Tags",
+          "content": [
+            {
+              "type": "sub-title",
+              "text": "What are tags?"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "Tags is a way to assign tags to your objects, to determain what they will be imported as."
+              ]
+            },
+            {
+              "type": "sub-title",
+              "text": "Tags that are available."
+            },
+            {
+              "type": "paragraph",
+              "info1": "https://otherassets.commissiontoolz.xyz/roimport/9072752a-659b-4acf-9e06-9afb90e5bd99_image.webp",
+              "info2": "https://otherassets.commissiontoolz.xyz/roimport/e64fa68a-bd2d-426b-8ea6-f390b12f541b_adfgbadbadbbfd.png",
+              "texts": [
+                "**_Image**: Will flatten the object and export as a **imagelabel**",
+                "**_Gray**: Same as **_image**, but it will be **grayscaled**.",
+                "{info1}**_Parent**: Will export the object as a parent of the whole group/frame",
+                "**_Textbutton**: Will become a **textbutton**.",
+                "**_ImageButton**: Will become a **ImageButton**.",
+                "**_ImageButtonF**: Same as imagebutton, however will be flatten.",
+                "**_Button**: Will become a **textbutton** or a **ImageButton** depending on its siblings.",
+                "**_Scroll**: Will become a Scrollingframe in the Y axis.",
+                "**_ScrollX**: Will become a Scrollingframe in the X axis.",
+                "**_VPF**: Will become a viewportframe.",
+                "**_canvas**: Will become a canvasgroup.",
+                "**_textbox**: Will become a textbox, placeholder and text is both affected.",
+                "**_ignore**: Will ignore the object.",
+                "**_UIList**: When used on a object, it Will put a UIListLayout on the object.",
+                "**_Grid**: When used on a object, it Will put a UIGridLayout on the object.",
+                "**_Lock**: When used on a object, it will add a AspectRatioConstraint to the object.",
+                "**_Tile**: When used on a object that has a image, it will make it a tile in roblox studio",
+                "**_Slice**: When used on a object that has a image, it will slice the image.",
+                "{info2} **_stroke**: When used, it will export the items as a stroke to the parent.",
+                "**_frame**: will make the object a frame, best use case is when a object that is a “vector path” is suppose to be a rectangle."
+              ]
+            },
+            {
+              "type": "notice",
+              "text": "Tags are case-insensitive and can be combined. For example, a frame tagged with `_gray` and `_parent` will be imported as a grayscaled parent frame, the children will still be exported as olbjects"
+            }
+          ]
+        },
+        {
+          "title": "Whats Supported",
+          "id": "supported",
+          "content": [
+            {
+              "type": "sub-title",
+              "text": "Texts"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "- **Font-Families**: supports a wide range of font families available in Roblox. You can use any of the following font families for your text layers in Figma:",
+                "- **Font-Size**: preserves the font size of your text layers when importing them into Roblox. The font size will be translated to the corresponding TextSize property in Roblox.",
+                "- **Text-Color**: retains the text color of your Figma text layers and applies it to the TextColor3 property in Roblox.",
+                "- **Font-Weights**: supports different font weights available in Roblox. You can use any of the following font weights for your text layers in Figma",
+                "- **Text-Alignment**: supports text alignment options such as left, center, and right alignment. The alignment settings in Figma will be reflected in the imported Roblox UI elements.",
+                "- **Text-Cases**: supports text case transformations such as uppercase, lowercase, and title case, The text case settings will be transformed.",
+                "- **Decorations**: Strikethrough and underline, **Will be exported as richtext.**",
+                "- **Line Height**: Spacing between the lines of lines.",
+                "- **Italic**: Italic will be applied.",
+                "- **Truncate Text**: Will control what text is viewed on the screen.",
+                "- **Rich-Text**: Will be exported as richtext.",
+                "- **Text-Shadows**: Original text will be duplicated and moved down, it will be behind the original text, and will be colored to the shadow color."
+              ]
+            },
+            {
+              "type": "notice",
+              "text": "Rich Text supports everything that was mentioned above, custom fonts, transparencies are supported"
+            },
+            {
+              "type": "sub-title",
+              "text": "Object properties"
+            },
+            {
+              "type": "paragraph",
+              "info2": "https://otherassets.commissiontoolz.xyz/roimport/58eb8c9e-b693-4cce-be4f-bc022ab8435f_image.webp",
+              "info": "https://otherassets.commissiontoolz.xyz/roimport/6e0f5e84-fa20-4686-bec2-75ea8404280c_image.webp",
+              "texts": [
+                "- **Solid Fills**: WIll be transofrmed into BackgroundColor3 and BackgroundTransparency.",
+                "- **Linear Gradients**: Will be transformed into a UIGradient object, with the same colors and rotation.",
+                "- **Corner Radious**: Will be transformed into a UICorner object.",
+                "{info2} - **Strokes**: Will be transformed into a UIStroke object with the same color, thickness, join mode, and transparency, multiple strokes are supported, and will be added in the order they were created.",
+                "- **Rotations**: Supports rotations, the rotation will be applied to the object.",
+                "- **DropShdaows**: Will use UIShadow, also supports transparency and color, and works with strokes",
+                "{info} - **Object with solid and a image**: the object will be a imagelabel with the image attatched, and the solid will be the backgroundcolor3 and backgroundtransparency, **image will be grayscaled**"
+              ]
+            },
+            {
+              "type": "notice",
+              "text": "Dropshadows works however objects with transparencies may face issues. and groups that are rotated and have objects in it may have issues."
+            },
+            {
+              "type": "sub-title",
+              "text": "Layouts"
+            },
+            {
+              "type": "paragraph",
+              "info2": "https://media.discordapp.net/attachments/1443066729113845781/1521716009055293530/image.png?ex=6a45d7f8&is=6a448678&hm=91f6ec2386ce45d8bddc8a72d9639dcc07765d0e9045a1bfc0373d98206b6f39&=&format=webp&quality=lossless&width=668&height=343",
+              "info": "https://media.discordapp.net/attachments/1520178742847213618/1521714588230357073/image.png?ex=6a45d6a5&is=6a448525&hm=06197f80764f0cb7c2a3be8846bd78f20986b8346641e8be7c90505cf2e3a36e&=&format=webp&quality=lossless&width=440&height=466",
+              "texts": [
+                "- **Autolayouts**: Will add a UIListLayout, UIGridLayout to the object.",
+                "- **Padding**: Will add a UIPadding object to the object.",
+                "- **Layout Gaps**: Will Manuipulate the UIListLayout or UIGridLayout's spacing property.",
+                "- **Prototype overflows**: Will make it a scrolling frame."
+              ]
+            },
+            {
+              "type": "sub-title",
+              "text": "Other"
+            },
+            {
+              "type": "paragraph",
+              "info": "https://otherassets.commissiontoolz.xyz/roimport/29149e17-f20b-4f68-8511-3b047e203c27_image.webp",
+              "texts": [
+                "- **Linear Repeat groups**: Will add repeated objects, will be in a uilist resulting in the same order. **Must** use __PX__ for the **GAP**.",
+                "{info} - **Tinted Icons**: Will be exported as **_gray** if inputted.",
+                "- **Emojis**: Will be exported as normal."
+              ]
+            }
+          ]
+          
+        },
+        {
+          "title": "What will become Images",
+          "id": "images",
+          "content": [
+            {
+              "type": "paragraph",
+              "info3": "https://otherassets.commissiontoolz.xyz/roimport/f038828c-802d-495b-8989-3896b4ce00da_image.webp",
+              "texts": [
+                "- **Unions**",
+                "- **Substracts**",
+                "- **Intersects**",
+                "- **Exclude**",
+                "- **Masks** | turned into **mask_image**",
+                "- **Radial, Angular, or diamond gradiants.**",
+                "- **Radial Repeat Groups**",
+                "- **Objects that has Texture Effect, InnerShadow, Glass, Backgound Blur, or Shader**",
+                "- **Dashed, Dynamic and Brush strokes**",
+                "- **Vector Paths, Eclipses, Lines, Vector paths, Stars, Polygons, Arrow**",
+                "- **objects with blend mode.**",
+                "{info3} - **Images with color filters.**"
+              ]
+            },
+            {
+              "type": "notice",
+              "text": "Objects with blend modes may not export properly."
+            },
+            {
+              "type": "sub-title",
+              "text": "How to export Blend modes properly"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "Exporting blendmodes may be tricky when it comes to exporting, so this guide will show you how to export them to retain their colors/blend mode."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "1. select the object that has the blend mode and the background the blend mode is on, and group them together."
+              ]
+            },
+            {
+              "type": "image",
+              "image": "https://otherassets.commissiontoolz.xyz/roimport/7f4afaa7-b28d-4c0e-9aa3-22e9f9ec069e_Figma_fREHpbgCOn_1.gif"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "2. select the group and name it **{name}_image**"
+              ]
+            },
+            {
+              "type": "image",
+              "image": "https://otherassets.commissiontoolz.xyz/roimport/84a75f85-6e2b-4051-99c8-e6d624c4aa53_Figma_UuSfrbOvVX_1.gif"
+            }
+          ]
+        },
+        {
+          "title": "api key image uploads",
+          "id": "auto-export-images",
+          "content": [
+            {
+              "type": "paragraph",
+              "texts": [
+                "RoImport can upload exported images directly to Roblox using an **Open Cloud API key** and a bridge server running locally on your computer.",
+                "The bridge must remain open while RoImport is exporting and uploading images."
+              ]
+            },
+            {
+              "type": "sub-title",
+              "text": "Download the Windows bridge"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "1. Open the **RoImport Bridge GitHub repository**:",
+                "{link:https://github.com/ducks-quacky/RoImport-bridge/tree/main}:https://github.com/ducks-quacky/RoImport-bridge/tree/main",
+                "2. Select **Windows-bridge.bat**.",
+                "3. Press the download button to download the BAT file.",
+                "4. Keep the BAT file somewhere safe so you can run it whenever you use API key uploading."
+              ]
+            },
+            {
+              "type": "notice",
+              "text": "The current bridge download is for Windows. Node.js 20 or newer must be installed before running it."
+            },
+            {
+              "type": "sub-title",
+              "text": "Start the bridge"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "1. Double-click **Windows-bridge.bat**.",
+                "2. A terminal window will open and start the local RoImport bridge.",
+                "3. Keep the terminal window open while exporting.",
+                "4. Closing the terminal will stop API key image uploads."
+              ]
+            },
+            {
+              "type": "notice",
+              "text": "Only download the bridge from the official RoImport Bridge repository."
+            },
+            {
+              "type": "sub-title",
+              "text": "Create a Roblox API key"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "1. Open the API Keys page in the Roblox Creator Dashboard.",
+                "2. Create a new API key.",
+                "3. Add **Assets** to the access permissions.",
+                "4. Enable the **Read** and **Write** asset operations.",
+                "5. Give the key access to the user or group that will own the uploaded images.",
+                "6. Generate the key and copy it somewhere secure."
+              ]
+            },
+            {
+              "type": "notice",
+              "text": "Your API key should be treated like a password. Never publish it, upload it to GitHub, or share it with anyone."
+            },
+            {
+              "type": "sub-title",
+              "text": "Configure RoImport"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "1. Open the **Export Images** setting in RoImport.",
+                "2. Change the export method from **ZIP Download** to **API Key**.",
+                "3. Select **User** or **Group**.",
+                "4. Paste your Roblox Open Cloud API key into the API key input.",
+                "5. Enter the Roblox user ID or group ID that should own the images.",
+                "6. Press **Export**."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "While exporting, the output will display the current upload progress:",
+                "**Images uploading: 5/10**",
+                "Duplicate images are detected and only uploaded once. Every duplicate object will reuse the same Roblox image asset ID."
+              ]
+            },
+            {
+              "type": "sub-title",
+              "text": "Finding your user or group ID"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "Your **user ID** is the number inside your Roblox profile URL.",
+                "Your **group ID** is the number inside your Roblox group URL.",
+                "Make sure the selected User or Group option matches the ID you entered."
+              ]
+            },
+            {
+              "type": "sub-title",
+              "text": "Troubleshooting"
+            },
+            {
+              "type": "paragraph",
+              "texts": [
+                "- **Could not connect to bridge** | Start Windows-bridge.bat and keep its terminal open.",
+                "- **Node.js is required** | Install Node.js 20 or newer and run the BAT file again.",
+                "- **Invalid API key** | Generate a valid Open Cloud API key with Assets Read and Write permissions.",
+                "- **Invalid user or group ID** | Confirm the ID and selected creator type are correct.",
+                "- **Permission denied** | Make sure the API key owner has permission to upload assets for the selected user or group.",
+                "- **Images are not visible immediately** | Roblox may still be processing or moderating the uploaded images."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
