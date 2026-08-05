@@ -1,0 +1,38 @@
+{
+  "title": "RoImport",
+  "tagline": "Figma to Roblox, simplified.",
+  "description": "RoImport is a free tool that allows you to export frames directly from figma to roblox, which carries almost if not all properties, objects, and layouts. It is designed to be simple and easy to use, while also being powerful enough to handle complex designs.",
+  "heroImage": "https://otherassets.commissiontoolz.xyz/roimport/zxvvbvn.png",
+  "features": [
+    {
+      "icon": "tag",
+      "title": "Tag System",
+      "description": "You will be able to input your own tags like _parent, _gray, ect. not case sensitive and can be combined."
+    },
+    {
+      "icon": "gift",
+      "title": "Free Forever",
+      "description": "This product is permanently free and wont require any sort of payment."
+    },
+    {
+      "icon": "download",
+      "title": "Direct Import",
+      "description": "Export frames directly from Figma to Roblox-compatible GUI layouts. No manual recreation, no lost properties."
+    },
+    {
+      "icon": "layout",
+      "title": "Auto-Layout Detection",
+      "description": "Automatically detects Figma auto-layout frames and translates them into Roblox UIListLayouts, UIGridLayouts and UIPadding"
+    },
+    {
+      "icon": "box",
+      "title": "Component Mapping",
+      "description": "Maps Figma components to Roblox GUI elements, text to TextLabel, rectangles to Frame, images to ImageLabel."
+    },
+    {
+      "icon": "layers",
+      "title": "Batch Processing",
+      "description": "Import multiple frames at once. Select, tag, and export entire design systems in a single pass."
+    }
+  ]
+}
