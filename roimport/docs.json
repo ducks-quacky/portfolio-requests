@@ -402,24 +402,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": "new-page",
-          "title": "page stesting",
-          "content": [
-            {
-              "type": "images",
-              "layout": "grid",
-              "columns": 2,
-              "items": [
-                {
-                  "image": "https://stuxadmin.commissiontoolz.xyz/roimport/docs/2026/08/87d3317e-d430-4318-bc77-20a14489dd24.png",
-                  "alt": "",
-                  "caption": ""
-                }
-              ]
-            }
-          ]
         }
       ]
     }
