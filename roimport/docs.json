@@ -287,9 +287,15 @@
           ]
         },
         {
-          "title": "api key image uploads",
+          "title": "How to import images",
           "id": "auto-export-images",
           "content": [
+            {
+              "type": "heading",
+              "level": 1,
+              "text": "Method 1 | APIKey",
+              "id": ""
+            },
             {
               "type": "paragraph",
               "texts": [
