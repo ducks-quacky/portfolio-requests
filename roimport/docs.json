@@ -428,6 +428,10 @@
               "caption": "",
               "loading": "lazy",
               "text": ""
+            },
+            {
+              "type": "paragraph",
+              "text": ""
             }
           ]
         }
