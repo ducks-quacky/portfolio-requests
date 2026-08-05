@@ -402,16 +402,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": "new-page",
-          "title": "New Page",
-          "content": [
-            {
-              "type": "paragraph",
-              "text": "test"
-            }
-          ]
         }
       ]
     }
