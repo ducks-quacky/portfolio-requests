@@ -429,11 +429,56 @@
               "side": "left",
               "imageWidth": 42,
               "caption": "",
-              "loading": "lazy"
+              "loading": "lazy",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "You would want to click that upload button next to the 3 lines at the top and upload all of the images.\nonce you upload all images, you would see a bulk import queue, wait for all to upload"
+                },
+                {
+                  "type": "images",
+                  "layout": "grid",
+                  "columns": 2,
+                  "items": [
+                    {
+                      "image": "https://media.discordapp.net/attachments/1443066729113845781/1535668226111832094/image.png?ex=6a7899fc&is=6a77487c&hm=4ab46ea654beaeee0a2ab127742272c1915aa8c493b3974fee6dc761cfd65f35&=&format=webp&quality=lossless",
+                      "alt": "",
+                      "caption": ""
+                    },
+                    {
+                      "image": "https://media.discordapp.net/attachments/1443066729113845781/1535668544170098779/image.png?ex=6a789a48&is=6a7748c8&hm=2f945b9db30278a00d360e2ad19e8b441551ff0327f3cc94241b7a5b3d46a227&=&format=webp&quality=lossless",
+                      "alt": "",
+                      "caption": ""
+                    }
+                  ],
+                  "image": "https://media.discordapp.net/attachments/1443066729113845781/1535668226111832094/image.png?ex=6a7899fc&is=6a77487c&hm=4ab46ea654beaeee0a2ab127742272c1915aa8c493b3974fee6dc761cfd65f35&=&format=webp&quality=lossless",
+                  "alt": "",
+                  "caption": "",
+                  "loading": "lazy"
+                }
+              ]
             },
             {
-              "type": "paragraph",
-              "text": ""
+              "type": "image-text",
+              "image": "https://media.discordapp.net/attachments/1443066729113845781/1535669005468041356/image.png?ex=6a789ab6&is=6a774936&hm=f26c5745256e0d0f75680b72a970573ba8faadf41d38b69075dd4fcebc365972&=&format=webp&quality=lossless&width=339&height=768",
+              "alt": "",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "your going to want to select all images, then right click and select \"insert\""
+                },
+                {
+                  "type": "image",
+                  "image": "https://media.discordapp.net/attachments/1443066729113845781/1535669606616662097/image.png?ex=6a789b45&is=6a7749c5&hm=a6b598f34050e4ce4c55d8a50c0d353fcb89bdea6d2fd99f9ede671a696ec568&=&format=webp&quality=lossless",
+                  "alt": "",
+                  "caption": "",
+                  "loading": "lazy"
+                }
+              ],
+              "side": "left",
+              "imageWidth": 42,
+              "caption": "",
+              "loading": "lazy"
             }
           ]
         }
