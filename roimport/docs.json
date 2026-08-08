@@ -487,6 +487,95 @@
             {
               "type": "paragraph",
               "text": "And then you would want to put the json inside the roimport plugin then click \"import\""
+            },
+            {
+              "type": "sub-title",
+              "text": "New asset manager"
+            },
+            {
+              "type": "image-text",
+              "image": "https://media.discordapp.net/attachments/1524929870168195152/1535671405763493918/image.png?ex=6a789cf2&is=6a774b72&hm=54a7c51efd10891a208b68e9e4c7a078e3bad0842d7e09e46fc82c33f82596c8&=&format=webp&quality=lossless",
+              "alt": "",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "You would click the \"import\" button which is lcoated at the top of the asset manager"
+                },
+                {
+                  "type": "image",
+                  "image": "https://media.discordapp.net/attachments/1524929870168195152/1535671744776376371/image.png?ex=6a789d43&is=6a774bc3&hm=80866320b4963725b7ff83662826b5ef9a2dee0b272092cdc02c8d78a447865e&=&format=webp&quality=lossless",
+                  "alt": "",
+                  "caption": "",
+                  "loading": "lazy"
+                }
+              ],
+              "side": "left",
+              "imageWidth": 42,
+              "caption": "",
+              "loading": "lazy"
+            },
+            {
+              "type": "image-text",
+              "image": "https://media.discordapp.net/attachments/1524929870168195152/1535671924754219078/image.png?ex=6a789d6e&is=6a774bee&hm=f0b97043cd779def912c99935034b2ada915ff4c1fc3f3bef15f8dfd4ce57831&=&format=webp&quality=lossless&width=342&height=768",
+              "alt": "",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "and then you would get this menu, which after that, you want to click that import button at the top of the import queue, wait for all to turn green"
+                },
+                {
+                  "type": "image",
+                  "image": "https://media.discordapp.net/attachments/1524929870168195152/1535672010829725706/image.png?ex=6a789d82&is=6a774c02&hm=9e4de32ea7a073176ad8723c2ac4fd3f34ddfc76d36a125ecbc47bc70cd0b7c7&=&format=webp&quality=lossless&width=384&height=63",
+                  "alt": "",
+                  "caption": "",
+                  "loading": "lazy"
+                },
+                {
+                  "type": "image",
+                  "image": "https://media.discordapp.net/attachments/1524929870168195152/1535672189762797659/image.png?ex=6a789dad&is=6a774c2d&hm=737464ef4791f5e5bb0a4be4b61c6c3d5ba328cc9c642a882834cacb0f066d81&=&format=webp&quality=lossless",
+                  "alt": "",
+                  "caption": "",
+                  "loading": "lazy"
+                }
+              ],
+              "side": "left",
+              "imageWidth": 42,
+              "caption": "",
+              "loading": "lazy"
+            },
+            {
+              "type": "image-text",
+              "image": "https://media.discordapp.net/attachments/1524929870168195152/1535672465563455589/image.png?ex=6a789def&is=6a774c6f&hm=a12f85ebdb9c8d9912b07e5872d8e21e820c54c13fb5ec8116ad52a0ac7a0255&=&format=webp&quality=lossless",
+              "alt": "",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "after that, go back to the asset manager and select the **\"place\"** and select **uploads**"
+                }
+              ],
+              "side": "left",
+              "imageWidth": 42,
+              "caption": "",
+              "loading": "lazy"
+            },
+            {
+              "type": "image-text",
+              "image": "https://media.discordapp.net/attachments/1524929870168195152/1535672770720043078/image.png?ex=6a789e37&is=6a774cb7&hm=c5a2d640f4c4ddafb48bac6c948f1b8abcc55ef273451d1acf656950bfe12c71&=&format=webp&quality=lossless",
+              "alt": "",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "and then you would want to select all of the objects and right click, insert selection and insert at camera"
+                }
+              ],
+              "side": "left",
+              "imageWidth": 42,
+              "caption": "",
+              "loading": "lazy"
+            },
+            {
+              "type": "paragraph",
+              "text": "after that, you may put the json inside the roimport plugin and import!"
             }
           ]
         }
