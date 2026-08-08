@@ -473,12 +473,20 @@
                   "alt": "",
                   "caption": "",
                   "loading": "lazy"
+                },
+                {
+                  "type": "paragraph",
+                  "text": "after that, you would see that the images has went to the place, it will start disappearing. which is a good thing"
                 }
               ],
               "side": "left",
               "imageWidth": 42,
               "caption": "",
               "loading": "lazy"
+            },
+            {
+              "type": "paragraph",
+              "text": "And then you would want to put the json inside the roimport plugin then click \"import\""
             }
           ]
         }
