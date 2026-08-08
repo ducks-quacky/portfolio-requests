@@ -422,12 +422,14 @@
               "text": "Old asset manager"
             },
             {
-              "type": "image",
+              "type": "image-text",
               "image": "https://stuxadmin.commissiontoolz.xyz/roimport/6b37c8cc-7ba2-4473-bfe4-0baa7ab55bb1.webp",
               "alt": "",
-              "caption": "You would want to click that upload button next to the 3 lines at the top",
-              "loading": "lazy",
-              "text": ""
+              "text": "You would want to click that upload button next to the 3 lines at the top",
+              "side": "left",
+              "imageWidth": 42,
+              "caption": "",
+              "loading": "lazy"
             },
             {
               "type": "paragraph",
